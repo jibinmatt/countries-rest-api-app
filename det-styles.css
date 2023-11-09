@@ -1,0 +1,79 @@
+:root {
+  --italianno-font : 'Italianno', cursive;
+  --nunito-sans-font : 'Nunito Sans', sans-serif;
+  --poppins-font : 'Poppins', sans-serif;
+  --roboto-mono : 'Roboto Mono', monospace;
+
+  --bg-light-mode : hsl(0, 0%, 97%);
+  --bg-dark-mode : hsl(207, 26%, 17%);
+  --dark-blue : hsl(209, 23%, 22%);
+  --dark-text : hsl(0, 0%, 100%);
+  --light-input : hsl(0, 0%, 52%);
+  --light-text : hsl(200, 15%, 8%);
+}
+
+/*
+font-family: 'Italianno', cursive;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace; 
+*/
+
+*, ::after, ::before {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  /* border: 1px solid red; */
+  place-self: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 25px 180px;
+}
+
+.title {
+  font-family: var(--nunito-sans-font);
+  font-size: larger;
+  font-weight: 700;
+}
+
+.theme-switcher {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ionicon {
+  margin-right: 15px;
+  width: 24px;
+  height: 24px;
+}
+
+.theme-text {
+  font-family: var(--nunito-sans-font);
+  font-size: 20px;
+  font-weight: 600;
+}
